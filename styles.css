@@ -552,6 +552,16 @@ h3 {
   color: var(--ink);
 }
 
+.case-links {
+  margin-top: 1rem;
+}
+
+.case-links a {
+  color: var(--accent-strong);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
