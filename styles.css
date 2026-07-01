@@ -400,6 +400,79 @@ h3 {
   box-shadow: 0 0 0 3px rgba(44, 116, 77, 0.18);
 }
 
+.card-screenshot {
+  position: relative;
+  margin: auto 0 14px;
+  height: 180px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.card-screenshot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+.card-screenshot img[src="assets/img/pe-ic-dashboard-screenshot.png"]:not([complete]) + .screenshot-placeholder,
+.card-screenshot img:not([src]) + .screenshot-placeholder {
+  display: flex;
+}
+
+.screenshot-placeholder {
+  display: none;
+  position: absolute;
+  inset: 0;
+  align-items: flex-end;
+  padding: 16px;
+}
+
+.card-screenshot img:not([naturalWidth]) + .screenshot-placeholder {
+  display: flex;
+}
+
+.about-headshot {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-headshot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+.headshot-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 0.88rem;
+  text-align: center;
+  padding: 24px;
+}
+
+.headshot-placeholder::before {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--line);
+}
+
 .card-tools {
   display: flex;
   flex-wrap: wrap;
