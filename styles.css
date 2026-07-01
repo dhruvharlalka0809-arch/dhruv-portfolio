@@ -1164,6 +1164,116 @@ h3 {
   color: var(--muted);
 }
 
+.role-page .site-header {
+  position: sticky;
+}
+
+.role-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(280px, 0.92fr);
+  gap: clamp(28px, 5vw, 64px);
+  align-items: center;
+  padding: clamp(48px, 7vw, 92px) 0 40px;
+}
+
+.role-hero h1 {
+  max-width: 980px;
+  font-size: clamp(2.6rem, 6vw, 6.2rem);
+}
+
+.role-summary {
+  color: var(--muted);
+  font-size: 1.12rem;
+}
+
+.role-proof-panel {
+  padding: 24px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.role-proof-panel h2 {
+  margin-bottom: 18px;
+  font-size: 1.35rem;
+}
+
+.role-proof-list {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.role-proof-list li {
+  padding: 12px 0;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+}
+
+.role-proof-list strong {
+  display: block;
+  color: var(--ink);
+  font-size: 1.2rem;
+}
+
+.role-focus-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 18px;
+}
+
+.role-note,
+.role-fit-card {
+  padding: 22px;
+  background: var(--white);
+  border: 1px solid var(--line);
+}
+
+.role-note p,
+.role-fit-card p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.role-project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.role-project-grid .project-card {
+  min-height: 300px;
+}
+
+.role-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px;
+  background: var(--ink);
+  color: var(--white);
+}
+
+.role-cta p {
+  max-width: 680px;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.role-cta .button {
+  border-color: var(--white);
+  color: var(--white);
+}
+
+.role-cta .button.primary {
+  background: var(--white);
+  color: var(--ink);
+}
+
 .about-hero {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(320px, 0.72fr);
